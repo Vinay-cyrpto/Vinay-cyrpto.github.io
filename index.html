@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*
+        # !important
+        #1 ID
+        #2 Class
+        #inline
+        #internal
+        #ext
+        
+        */
+      .section {
+        border: 1px solid silver;
+        height: 450px;
+      }
+      .bg1 {
+        background-image: url(https://imgs.search.brave.com/HwXhE9nsp4LLtra0A7j6e_u5wjsDbJatOtj-b94TBvU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMzLmFscGhhY29k/ZXJzLmNvbS82NDQv/NjQ0MzE3LmpwZw);
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      .bg2 {
+        background-image: url(https://imgs.search.brave.com/OzF4nv6VSeN21cXTdH4etx5tTlSgRhry32xagptA5uU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDQ3ODg3/MDYuanBn);
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      .bg3 {
+        background-image: url(https://imgs.search.brave.com/qysY2HcmLkCk6_U9risRgFP2xDDGPX7u6Q2cwB9HYDY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDQ3ODg3/NDguanBn);
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      #header,
+      #footer {
+        height: 100px;
+      }
+
+      ul.menu {
+        float: right;
+      }
+
+      ul.menu li {
+        display: inline;
+        border: 1px solid silver;
+        padding: 7px;
+        border-radius: 5px;
+        box-shadow: 4px 4px 5px blue;
+      }
+      ul.menu li:active {
+        box-shadow: 1px 1px 0px blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="section" id="header">
+      <ul class="menu">
+        <li>Home</li>
+        <li>Products</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Help</li>
+      </ul>
+    </div>
+    <div class="section bg1" id="div2"><h1>div2</h1></div>
+    <div class="section" id="div3"><h1>div3</h1></div>
+    <div class="section bg2" id="div4"><h1>div4</h1></div>
+    <div class="section" id="div5"><h1>div5</h1></div>
+    <div class="section bg3" id="div6"><h1>div6</h1></div>
+    <div class="section" id="footer"><h1>div7</h1></div>
+  </body>
+</html>

@@ -14,10 +14,15 @@
         #ext
         
         */
+
+      html body {
+        scroll-behavior: smooth;
+      }
       .section {
         border: 1px solid silver;
         height: 450px;
       }
+
       .bg1 {
         background-image: url(https://imgs.search.brave.com/HwXhE9nsp4LLtra0A7j6e_u5wjsDbJatOtj-b94TBvU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMzLmFscGhhY29k/ZXJzLmNvbS82NDQv/NjQ0MzE3LmpwZw);
         background-size: cover;
@@ -40,6 +45,8 @@
 
       ul.menu {
         float: right;
+        position: fixed;
+        /* background-color: white; */
       }
 
       ul.menu li {
@@ -48,6 +55,12 @@
         padding: 7px;
         border-radius: 5px;
         box-shadow: 4px 4px 5px blue;
+        background-color: white;
+        text-decoration: none;
+      }
+
+      ul.menu li a {
+        text-decoration: none;
       }
       ul.menu li:active {
         box-shadow: 1px 1px 0px blue;
@@ -57,18 +70,18 @@
   <body>
     <div class="section" id="header">
       <ul class="menu">
-        <li>Home</li>
+        <li><a href="#home">Home</a></li>
         <li>Products</li>
         <li>About</li>
-        <li>Contact</li>
+        <li><a href="#Contact">Contact</a></li>
         <li>Help</li>
       </ul>
     </div>
     <div class="section bg1" id="div2"><h1>div2</h1></div>
-    <div class="section" id="div3"><h1>div3</h1></div>
+    <div class="section" id="home"><h1>home</h1></div>
     <div class="section bg2" id="div4"><h1>div4</h1></div>
     <div class="section" id="div5"><h1>div5</h1></div>
-    <div class="section bg3" id="div6"><h1>div6</h1></div>
+    <div class="section bg3" id="Contact"><h1>Contact</h1></div>
     <div class="section" id="footer"><h1>div7</h1></div>
   </body>
 </html>
